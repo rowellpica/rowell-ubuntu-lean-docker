@@ -1,0 +1,1 @@
+docker exec -it rowellubuntuleandocker_vmclone_1 /bin/bash

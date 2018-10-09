@@ -1,0 +1,16 @@
+version: '3'
+services:
+  vmclone:
+    image: rowellpica/ubuntulean
+    environment:
+      - DISPLAY:":0"
+    volumes:
+      - ./dockerdir/:/hostdir
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+      - "8821:8821"
+    restart: on-failure
+
+volumes:
+  vmclone:
